@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Repaso_Html")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b10a1cffa83479fae7f42d95c74313579c12e39c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Repaso_Html")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Repaso_Html")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

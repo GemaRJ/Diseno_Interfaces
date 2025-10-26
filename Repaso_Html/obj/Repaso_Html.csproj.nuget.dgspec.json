@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gr\\Desktop\\TÉCNICO SUPERIOR DE DESARROLLO DE APLICACIONES WEB_DAW\\2º CURSO Técnico Superior en Desarrollo de Aplicaciones Web\\Diseño de interfaces web-Jose Manuel\\Repaso html y Css\\Repaso_Html\\Repaso_Html.csproj": {}
+    "C:\\Users\\gr\\Documents\\GitHub\\Diseno_Interfaces\\Repaso_Html\\Repaso_Html.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gr\\Desktop\\TÉCNICO SUPERIOR DE DESARROLLO DE APLICACIONES WEB_DAW\\2º CURSO Técnico Superior en Desarrollo de Aplicaciones Web\\Diseño de interfaces web-Jose Manuel\\Repaso html y Css\\Repaso_Html\\Repaso_Html.csproj": {
+    "C:\\Users\\gr\\Documents\\GitHub\\Diseno_Interfaces\\Repaso_Html\\Repaso_Html.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gr\\Desktop\\TÉCNICO SUPERIOR DE DESARROLLO DE APLICACIONES WEB_DAW\\2º CURSO Técnico Superior en Desarrollo de Aplicaciones Web\\Diseño de interfaces web-Jose Manuel\\Repaso html y Css\\Repaso_Html\\Repaso_Html.csproj",
+        "projectUniqueName": "C:\\Users\\gr\\Documents\\GitHub\\Diseno_Interfaces\\Repaso_Html\\Repaso_Html.csproj",
         "projectName": "Repaso_Html",
-        "projectPath": "C:\\Users\\gr\\Desktop\\TÉCNICO SUPERIOR DE DESARROLLO DE APLICACIONES WEB_DAW\\2º CURSO Técnico Superior en Desarrollo de Aplicaciones Web\\Diseño de interfaces web-Jose Manuel\\Repaso html y Css\\Repaso_Html\\Repaso_Html.csproj",
+        "projectPath": "C:\\Users\\gr\\Documents\\GitHub\\Diseno_Interfaces\\Repaso_Html\\Repaso_Html.csproj",
         "packagesPath": "C:\\Users\\gr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gr\\Desktop\\TÉCNICO SUPERIOR DE DESARROLLO DE APLICACIONES WEB_DAW\\2º CURSO Técnico Superior en Desarrollo de Aplicaciones Web\\Diseño de interfaces web-Jose Manuel\\Repaso html y Css\\Repaso_Html\\obj\\",
+        "outputPath": "C:\\Users\\gr\\Documents\\GitHub\\Diseno_Interfaces\\Repaso_Html\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gr\\AppData\\Roaming\\NuGet\\NuGet.Config"
