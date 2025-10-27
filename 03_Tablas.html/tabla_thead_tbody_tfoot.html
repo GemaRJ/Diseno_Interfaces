@@ -1,24 +1,32 @@
+<!-- Tabla con encabezado, cuerpo y pie de tabla usando estilos de color -->
 <table border="1">
-  <thead style="color:green;">
+
+  <!-- Encabezado de la tabla -->
+  <thead style="color:green;"> <!-- Texto verde para el encabezado -->
     <tr>
-      <th>Mes</th>
-      <th>Ahorro</th>
+      <th>Mes</th>    <!-- Columna de los meses -->
+      <th>Ahorro</th>  <!-- Columna del ahorro -->
     </tr>
   </thead>
-  <tfoot style="color:red;">
+
+  <!-- Cuerpo de la tabla -->
+  <tbody style="color:blue;"> <!-- Texto azul para los datos -->
     <tr>
-      <td>Suma</td>
-      <td>$180</td>
-    </tr>
-  </tfoot>
-  <tbody style="color:blue;">
-    <tr>
-      <td>Enero</td>
-      <td>$100</td>
+      <td>Enero</td>  <!-- Celda del mes Enero -->
+      <td>$100</td>   <!-- Celda del ahorro -->
     </tr>
     <tr>
       <td>Febrero</td>
       <td>$80</td>
     </tr>
   </tbody>
+
+  <!-- Pie de tabla -->
+  <tfoot style="color:red;"> <!-- Texto rojo para el total -->
+    <tr>
+      <td>Suma</td>  <!-- Celda con el texto “Suma” -->
+      <td>$180</td>  <!-- Celda con el total de ahorros -->
+    </tr>
+  </tfoot>
+
 </table>
