@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Formulario</title>
+</head>
+<body>
+
+    <form action="procesar.php" method="POST">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+        <br><br>
+
+        <label for="pass">Contraseña:</label>
+        <input type="password" id="pass">
+        <br><br>
+
+        <label for="anio">Año de nacimiento:</label>
+        <input type="number" id="anio">
+        <br><br>
+
+        <label for="fecha">Fecha de contrato:</label>
+        <input type="date" id="fecha">
+        <br><br>
+
+        <label for="hora">Hora de fichar:</label>
+        <input type="time" id="hora">
+        <br><br>
+
+        <label>Me gusta:</label>
+        <input type="checkbox" id="teatro" value="teatro">
+        <label for="teatro">Teatro</label>
+        
+        <input type="checkbox" id="cine" value="cine">
+        <label for="cine">Cine</label>
+        
+        <input type="checkbox" id="montana" value="montana">
+        <label for="montana">Montaña</label>
+        <br><br>
+
+        <label>Edad:</label>
+        <input type="radio" id="menor" name="edad" value="menor">
+        <label for="menor">Menor de edad</label>
+        
+        <input type="radio" id="adulto" name="edad" value="adulto">
+        <label for="adulto">Adulto</label>
+        
+        <input type="radio" id="abuelo" name="edad" value="abuelo">
+        <label for="abuelo">ABuelo</label>
+        <br><br>
+
+        <label for="color">Elige un color:</label>
+        <input type="color" id="color">
+        <br><br>
+
+        <label for="nivel">Indique su nivel:</label>
+        <input type="range" id="nivel">
+        <br><br>
+
+        <label for="provincia">Provincia:</label>
+        <select id="provincia">
+            <option value="madrid">Madrid</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="sevilla">Sevilla</option>
+            <option value="valencia">Valencia</option>
+        </select>
+        <br><br>
+
+        <label for="opinion">Dime tu opinión:</label>
+        <br>
+        <textarea id="opinion" rows="5" cols="40" placeholder="Escribe lo que quieras"></textarea>
+        <br><br>
+
+        <input type="submit" value="Enviar Datos secretos">
+        <input type="reset" value="Borrar">
+
+    </form>
+
+</body>
+</html>
