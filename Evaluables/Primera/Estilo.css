@@ -1,0 +1,147 @@
+/* ==========================
+   FUENTES Y MÁRGENES GENERALES
+========================== */
+html, body {
+    margin: 0;               /* elimina márgenes por defecto */
+    padding: 0;              /* elimina padding por defecto */
+    height: 100%;            /* altura completa de la pantalla */
+    font-family: Arial, sans-serif; /* fuente general para todo el sitio */
+}
+
+/* ==========================
+   FONDOS POR PÁGINA
+========================== */
+#pagina-inicio { 
+    background: url('./imagenes/imagenes/portada2.jpg') center/cover no-repeat; 
+    /* imagen de fondo centrada, cubre toda la pantalla y sin repetir */
+}
+#pagina-producto { 
+    background: url('./imagenes/imagenes/fondo_blanco.webp') center/cover no-repeat; 
+}
+#pagina-contacto { 
+    background: url('./imagenes/imagenes/fondo_amarillo.jpg') center/cover no-repeat; 
+}
+
+/* ==========================
+   OVERLAY CENTRALIZADO
+========================== */
+.overlay {
+    background: rgba(255,255,255,0.8); /* fondo semi-transparente */
+    padding: 30px;                      /* espacio interno del overlay */
+    border-radius: 10px;                /* bordes redondeados */
+    width: 90%;                         /* ancho relativo al contenedor */
+    max-width: 1000px;                  /* ancho máximo para pantallas grandes */
+    margin: 20px auto;                  /* centrado horizontal con separación arriba/abajo */
+    display: flex;                      
+    flex-direction: column;             /* apila los elementos verticalmente */
+    align-items: center;                /* centra los elementos horizontalmente */
+}
+
+/* ==========================
+   NAVEGACIÓN
+========================== */
+nav ul {
+    list-style: none;                   /* elimina viñetas de la lista */
+    display: flex;                      /* organiza los enlaces en fila */
+    justify-content: center;            /* centra los enlaces horizontalmente */
+    padding: 0;                         
+    margin-bottom: 30px;                /* separa la navegación del contenido */
+}
+nav ul li { margin: 0 15px; }           /* espacio entre cada enlace */
+nav ul li a { 
+    text-decoration: none;              /* quita subrayado de los enlaces */
+    color: #1e1eed;                        /* color de texto negro */
+    font-weight: bold;                  /* negrita */
+}
+
+/* ==========================
+   TITULOS Y PÁRRAFOS
+========================== */
+h1, h2, h3, p { text-align: center; } /* centra todos los textos */
+p { font-size: 1.2em; margin: 10px 0; } /* tamaño de letra y separación de párrafos */
+
+header h1 {
+    background-color: #d50000; /* fondo rojo */
+    color: #fff;               /* letras blancas */
+    padding: 10px 20px;        /* espacio dentro del cuadro */
+    border-radius: 5px;        /* bordes redondeados del cuadro */
+    text-shadow: none;         /* quitar sombra para mejor legibilidad */
+}
+
+/* ==========================
+   MAIN - PÁGINA INICIO Y CONTACTO
+========================== */
+#pagina-inicio main,
+#pagina-contacto main {
+    display: flex;             /* contenedor flexible */
+    flex-direction: column;    /* apila elementos verticalmente */
+    align-items: center;       /* centra horizontalmente */
+    gap: 20px;                 /* espacio entre los elementos */
+}
+
+/* ==========================
+   MAIN - PÁGINA PRODUCTOS
+========================== */
+#pagina-producto main {
+    display: flex;             /* contenedor flexible */
+    flex-wrap: wrap;           /* permite que las tarjetas pasen a otra fila */
+    justify-content: center;   /* centra horizontalmente todas las tarjetas */
+    gap: 20px;                 /* espacio entre tarjetas */
+}
+
+/* ==========================
+   PÁGINA PRODUCTOS
+========================== */
+.producto {
+    background: rgba(255,255,255,0.85); /* fondo semi-transparente de la tarjeta */
+    border-radius: 10px;                /* bordes redondeados */
+    padding: 10px;                       /* espacio interno */
+    width: 220px;                        /* ancho fijo de cada tarjeta */
+    text-align: center;                  /* centra contenido dentro de la tarjeta */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* sombra ligera para efecto 3D */
+    transition: transform 0.2s;          /* animación al pasar el ratón */
+}
+.producto:hover { transform: scale(1.05); } /* efecto zoom al pasar el ratón */
+.imagen-producto { width: 100%; border-radius: 5px; } /* imagen responsiva y bordes redondeados */
+
+/* ==========================
+   BOTÓN AGREGAR AL CARRITO
+========================== */
+.boton-carrito {
+    display: block;
+    margin: 10px auto;        /* centrado horizontal */
+    padding: 6px 10px;
+    font-size: 0.9em;
+    background: #000;          /* fondo negro */
+    color: #fff;               /* texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;           /* cambia cursor al pasar por el botón */
+}
+
+/* ==========================
+   FORMULARIO DE CONTACTO
+========================== */
+form {
+    display: flex;             
+    flex-direction: column;    /* apila campos verticalmente */
+    gap: 15px;                 /* espacio entre campos */
+    width: 100%;               
+    max-width: 400px;          /* ancho máximo igual para centrar overlay */
+}
+input, textarea, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;    /* borde gris */
+    font-size: 1em;
+}
+button { background: #000; color: #fff; cursor: pointer; }
+
+/* ==========================
+   FOOTER
+========================== */
+footer { 
+    text-align: center; 
+    margin-top: 30px; 
+    font-size: 0.9em; 
+}
