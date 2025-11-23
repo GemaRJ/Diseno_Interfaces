@@ -1,24 +1,17 @@
-/* ==========================
-   FUENTES Y MÁRGENES GENERALES
-   Configuración base de la página
-========================== */
+/*  Configuración base de la página */
 html, body {
-    margin: 0;               /* quita márgenes por defecto del navegador */
-    padding: 0;              /* quita el padding por defecto */
-    min-height: 100%;        /* asegura que la página ocupe toda la altura */
-    font-family: Arial, sans-serif; /* fuente general para todo el sitio */
-    box-sizing: border-box;  /* hace que padding y border se sumen al ancho total */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100%;
 }
 
 body {
-    display: flex;           /* hace que el body sea contenedor flex */
-    flex-direction: column;  /* apila los hijos (overlay) verticalmente */
+    display: flex;
+    flex-direction: column;
 }
 
-/* ==========================
-   FONDOS POR PÁGINA
-   Imagen de fondo para cada página
-========================== */
+/* Imagen de fondo para cada página */
 #pagina-inicio { 
     background: url('./imagenes/portada.jpg') center/cover no-repeat; 
 }
@@ -29,98 +22,107 @@ body {
     background: url('./imagenes/cliper2.webp') center/cover no-repeat; 
 }
 
-/* ==========================
-   OVERLAY CENTRALIZADO
-   Caja blanca semi-transparente donde va todo el contenido
-========================== */
+/* 
+   Overlay: Lo he utilizado porque las imagénes de fondo que he elegido
+            no resaltaban el texto que ponía.
+ */
 .overlay {
-    background: rgba(229, 232, 229, 0.911); /* fondo blanco con transparencia */
-    padding: 30px;                       /* espacio interno */
-    border-radius: 10px;                 /* bordes redondeados */
-    width: 90%;                          /* ancho relativo al contenedor */
-    max-width: 1000px;                   /* ancho máximo en pantallas grandes */
-    margin: 40px auto;                    /* centrado horizontal y margen arriba/abajo */
-    display: flex;                        /* flex para organizar elementos */
-    flex-direction: column;               /* apila verticalmente */
-    align-items: center;                  /* centra horizontalmente */
+    background: rgba(229, 232, 229, 0.90);
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* ==========================
-   NAVEGACIÓN
-   Menú superior de enlaces
-========================== */
+/* Navegación: Menú superior de enlaces */
 nav ul {
-    list-style: none;                    /* quita viñetas */
-    display: flex;                        /* pone los elementos en fila */
-    justify-content: center;              /* centra horizontalmente los enlaces */
-    padding: 0;                           
-    margin-bottom: 30px;                  /* separa menú del contenido */
-}
-nav ul li { margin: 0 15px; }            /* espacio entre cada enlace */
-nav ul li a { 
-    text-decoration: none;               /* quita subrayado */
-    color: #1e1eed;                      /* color azul Minecraft */
-    font-weight: bold;                   /* negrita */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 30px;
 }
 
-/* ==========================
-   TITULOS Y PÁRRAFOS
-========================== */
-h1, h2, h3, p { text-align: center; }   /* centra todo el texto */
-p { font-size: 1.2em; margin: 10px 0; } /* tamaño y separación de párrafos */
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1e1eed;
+    font-weight: bold;
+}
+
+/* Encabezado */
+h1, h2, h3, p {
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
 
 header h1 {
-    background-color: #1e90ff;           /* fondo azul del header */
-    color: #fff;                         /* texto blanco */
-    padding: 10px 20px;                  /* espacio interno */
-    border-radius: 5px;                  /* bordes redondeados */
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-/* ==========================
-   MAIN - PÁGINA INICIO Y CONTACTO
-========================== */
+/* Página de Inicio y Contacto */
 #pagina-inicio main,
 #pagina-contacto main {
-    display: flex;                        /* contenedor flexible */
-    flex-direction: column;               /* apila verticalmente */
-    align-items: center;                  /* centra horizontalmente */
-    gap: 20px;                            /* espacio entre secciones */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-/* ==========================
-   MAIN - PÁGINA PRODUCTOS
-========================== */
+/* Página productos */
 #pagina-producto main {
-    display: flex;                        /* contenedor flexible */
-    flex-wrap: wrap;                      /* permite que las tarjetas bajen de fila */
-    justify-content: center;              /* centra horizontalmente */
-    gap: 20px;                            /* separación entre productos */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-/* ==========================
-   PRODUCTOS
-   Tarjetas de cada producto
-========================== */
+/* PRODUCTOS: Tarjetas de cada producto */
 .producto {
-    background: rgba(255,255,255,0.9);   /* fondo semi-transparente de la tarjeta */
-    border-radius: 10px;                  /* bordes redondeados */
-    padding: 10px;                        /* espacio interno */
-    width: 220px;                          /* ancho fijo */
-    text-align: center;                   /* centra contenido */
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);/* sombra ligera */
-    transition: transform 0.2s;           /* animación al pasar el ratón */
-
-    /* NUEVO: alineación de botón al final */
-    display: flex;                        /* flex para poder empujar botón */
-    flex-direction: column;               /* apila verticalmente */
+    background: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    padding: 10px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
 }
 
-.producto:hover { transform: scale(1.05); } /* efecto zoom al pasar el ratón */
+.producto h2 {
+    min-height: 40px; 
+    margin-bottom: 5px; 
+}
 
-.imagen-producto { width: 100%; border-radius: 5px; } /* imagen responsiva y con bordes redondeados */
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.imagen-producto {
+    width: 100%;
+    height: 200px; 
+    border-radius: 5px;
+    object-fit: contain;
+}
 
 .boton-carrito {
-    margin-top: auto;   /* empuja el botón al final de la tarjeta */
+    margin-top: auto;   
     padding: 6px 10px;
     font-size: 0.9em;
     background: #000;
@@ -130,28 +132,32 @@ header h1 {
     cursor: pointer;
 }
 
-/* ==========================
-   FORMULARIO DE CONTACTO
-========================== */
+/*   Formulario de Contacto  */
 form {
     display: flex;
-    flex-direction: column; /* apila los campos verticalmente */
-    gap: 15px;              /* espacio entre campos */
+    flex-direction: column;
+    gap: 15px;
     width: 100%;
-    max-width: 400px;       /* ancho máximo */
+    max-width: 400px;
 }
+
 input, textarea, button {
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #0a0a0a; /* borde gris */
     font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #0a0a0a;
 }
-button { background: #000; color: #fff; cursor: pointer; }
-label input[type="checkbox"] { margin-right: 5px; }
 
-/* ==========================
-   FOOTER
-========================== */
+button {
+    background: #000;
+    color: white;
+    cursor: pointer;
+}
+
+label input[type="checkbox"] {
+    margin-right: 5px;
+}
+/* Pie de página */
 footer { 
     text-align: center; 
     margin-top: 30px; 
