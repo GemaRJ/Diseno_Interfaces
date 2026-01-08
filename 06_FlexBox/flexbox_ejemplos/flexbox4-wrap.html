@@ -1,46 +1,56 @@
-
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>flexbox1</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- La propiedad flex-wrap establece si los elementos se colocan en una sola línea o en varias. Los posibles valores de la propiedad flex-wrap son:
-      -no-wrap: los elementos se colocan en una sola línea.
-	  -wrap: los elementos se colocan en varias líneas si no caben en una sola línea
-	  -wrap-reverse: los elementos se colocan en varias líneas si no caben en una sola línea, pero las líneas se muestran de abajo arriba.
-	  -->
+  <head>
+    <meta charset="utf-8" />
+    <title>flexbox1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    La propiedad flex-wrap controla si los elementos flexibles (flex items) se colocan en una sola línea o en varias:
+      - nowrap: todos los elementos en una sola línea (por defecto)
+      - wrap: los elementos que no caben en la línea se mueven a la siguiente línea
+      - wrap-reverse: igual que wrap, pero las líneas se muestran de abajo hacia arriba
+  -->
+
     <style>
-    
-	div { display: inline-flex;  flex-wrap: wrap;
-	      margin-bottom: 5px; background-color: #eee; }
+      /* Contenedor flexible en línea que permite varias líneas si no caben todos los hijos */
+      div {
+        display: inline-flex; /* Convierte el div en contenedor flexible en línea: ocupa sólo el ancho necesario y puede colocarse junto a otros elementos */
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben en una fila */
+        margin-bottom: 5px; /* Separación vertical respecto a otros elementos */
+        background-color: #eee; /* Fondo gris claro para visualizar el contenedor */
+      }
 
-	p { width: 100px; border: black 1px solid; margin: 2px; }
-  </style>
-</head>
+      /* Cada párrafo dentro del contenedor */
+      p {
+        width: 100px; /* Ancho fijo de 100px */
+        border: black 1px solid; /* Borde negro para ver los límites de cada párrafo */
+        margin: 2px; /* Separación entre los párrafos */
+      }
+    </style>
+  </head>
 
-<body>
-  <div>
-    <p>Primer Parrafo</p>
-    <p>Segundo Parrafo</p>
-    <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
-    <p>Cuarto parrafo</p>
-	<p>Primer Parrafo</p>
-    <p>Segundo Parrafo</p>
-    <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
-    <p>Cuarto parrafo</p>
-	<p>Primer Parrafo</p>
-    <p>Segundo Parrafo</p>
-    <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
-    <p>Cuarto parrafo</p>
-	<p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
-    <p>Cuarto parrafo</p>
-	<p>Primer Parrafo</p>
-    <p>Segundo Parrafo</p>
-    <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
-    <p>Cuarto parrafo</p>
-  </div>
-
-	
-</body>
+  <body>
+    <!-- Contenedor flexible con varios párrafos que se envuelven -->
+    <div>
+      <p>Primer Parrafo</p>
+      <p>Segundo Parrafo</p>
+      <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+      <p>Cuarto parrafo</p>
+      <p>Primer Parrafo</p>
+      <p>Segundo Parrafo</p>
+      <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+      <p>Cuarto parrafo</p>
+      <p>Primer Parrafo</p>
+      <p>Segundo Parrafo</p>
+      <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+      <p>Cuarto parrafo</p>
+      <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+      <p>Cuarto parrafo</p>
+      <p>Primer Parrafo</p>
+      <p>Segundo Parrafo</p>
+      <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+      <p>Cuarto parrafo</p>
+    </div>
+  </body>
 </html>
