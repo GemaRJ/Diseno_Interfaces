@@ -1,116 +1,135 @@
+/* Selector universal: elimina márgenes y rellenos por defecto
+   y hace que el padding y el borde se incluyan en el tamaño total */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilo general del cuerpo de la página */
 body {
-  font-family: Georgia, "Times New Roman", serif;
-  background-color: #fff;
-  color: #555;
+  font-family: Georgia, "Times New Roman", serif; /* Fuente principal */
+  background-color: #fff; /* Fondo blanco */
+  color: #555; /* Color del texto gris oscuro */
 }
 
+/* Contenedor principal que centra el contenido */
 .container {
-  width: 90%;
-  margin: auto;
+  width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+  margin: auto; /* Centrado horizontal */
 }
 
+/* Cabecera */
 header {
-  text-align: center;
-  padding: 25px 0;
-  border-bottom: 1px solid #aaa;
+  text-align: center; /* Texto centrado */
+  padding: 25px 0; /* Espacio arriba y abajo */
+  border-bottom: 1px solid #aaa; /* Línea separadora inferior */
 }
 
+/* Título principal */
 header h1 {
-  font-family: "Lobster", cursive;
-  font-size: 32px;
+  font-family: "Lobster", cursive; /* Fuente decorativa */
+  font-size: 32px; /* Tamaño grande */
 }
 
+/* Subtítulo */
 header h4 {
-  font-size: 14px;
-  font-style: italic;
-  margin-top: 5px;
+  font-size: 14px; /* Tamaño pequeño */
+  font-style: italic; /* Cursiva */
+  margin-top: 5px; /* Separación respecto al h1 */
 }
 
+/* Contenedor central con menú, main y artículo */
 .content_wrapper {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 160px 2fr 1fr;
-  gap: 30px;
-  align-items: stretch;
+  margin-top: 30px; /* Separación respecto a la cabecera */
+  display: grid; /* Uso de CSS Grid */
+  grid-template-columns: 160px 2fr 1fr; /* Menú, contenido principal y artículo */
+  gap: 30px; /* Espacio entre columnas */
+  align-items: stretch; /* Igualar altura de los elementos */
 }
 
+/* Menú lateral */
 nav {
-  font-style: italic;
+  font-style: italic; /* Texto en cursiva */
 }
 
+/* Elementos del menú */
 nav div {
-  margin-bottom: 15px;
-  cursor: pointer;
+  margin-bottom: 15px; /* Separación entre opciones */
+  cursor: pointer; /* Cursor tipo enlace */
 }
 
+/* Estilo común para main y el artículo lateral */
 main,
 .content_wrapper article {
-  border: 1px solid #bbb;
-  border-radius: 20px;
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  border: 1px solid #bbb; /* Borde gris */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 20px; /* Espacio interior */
+  text-align: center; /* Texto centrado */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Elementos en columna */
 }
 
+/* Imágenes del main y del artículo lateral */
 main img,
 .content_wrapper article img {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 15px;
-  margin-bottom: 15px;
+  width: 100%; /* Ocupan todo el ancho */
+  height: 240px; /* Altura fija */
+  object-fit: cover; /* Recorte proporcional */
+  border-radius: 15px; /* Bordes redondeados */
+  margin-bottom: 15px; /* Separación inferior */
 }
 
+/* Texto del main */
 main p {
-  font-style: italic;
+  font-style: italic; /* Texto en cursiva */
 }
 
+/* Título del artículo lateral */
 .content_wrapper article h2 {
-  font-family: "Lobster", cursive;
-  font-size: 18px;
+  font-family: "Lobster", cursive; /* Fuente decorativa */
+  font-size: 18px; /* Tamaño medio */
 }
 
+/* Contenedor de los artículos inferiores */
 .articles {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  margin-top: 30px; /* Separación respecto a la zona superior */
+  display: grid; /* Uso de Grid */
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+  gap: 25px; /* Espacio entre artículos */
 }
 
+/* Artículos inferiores */
 .articles article {
-  border: 1px solid #bbb;
-  border-radius: 20px;
-  padding: 20px;
-  text-align: center;
+  border: 1px solid #bbb; /* Borde gris */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 20px; /* Espacio interior */
+  text-align: center; /* Texto centrado */
 }
 
+/* Imágenes de los artículos inferiores */
 .articles img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 15px;
-  margin-bottom: 15px;
+  width: 100%; /* Ocupan todo el ancho */
+  height: 200px; /* Altura fija */
+  object-fit: cover; /* Mantiene proporción */
+  border-radius: 15px; /* Bordes redondeados */
+  margin-bottom: 15px; /* Separación inferior */
 }
 
+/* Pie de página */
 footer {
-  margin: 40px 0 20px;
-  padding-top: 15px;
-  border-top: 1px solid #aaa;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-style: italic;
-  font-size: 14px;
+  margin: 40px 0 20px; /* Separación superior e inferior */
+  padding-top: 15px; /* Espacio interior superior */
+  border-top: 1px solid #aaa; /* Línea separadora */
+  display: flex; /* Flexbox */
+  justify-content: space-between; /* Elementos separados */
+  align-items: center; /* Alineación vertical */
+  font-style: italic; /* Texto en cursiva */
+  font-size: 14px; /* Tamaño pequeño */
 }
 
+/* Iconos de redes sociales */
 .social img {
-  width: 32px;
-  margin-left: 10px;
+  width: 32px; /* Tamaño de los iconos */
+  margin-left: 10px; /* Separación entre iconos */
 }
