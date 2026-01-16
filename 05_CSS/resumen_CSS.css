@@ -1,0 +1,220 @@
+
+/*  GUÍA CSS BÁSICO –            */
+
+
+
+
+/* 1. RESET / NORMALIZACIÓN                              */
+
+
+/* Selector universal: afecta a todos los elementos */
+* {
+  box-sizing: border-box;   /* El padding y el borde no suman tamaño */
+  margin: 0;                /* Elimina márgenes por defecto */
+  padding: 0;               /* Elimina rellenos por defecto */
+}
+
+/* Documento HTML */
+html {
+  font-size: 100%;          /* Tamaño base del documento */
+}
+
+
+/* 2. ESTILOS GLOBALES                                   */
+
+/* Estilos base de toda la página */
+body {
+  font-family: Arial, sans-serif;  /* Fuente principal */
+  font-size: 16px;                 /* Tamaño base del texto */
+  color: #333;                     /* Color general del texto */
+  background-color: #f0f0f0;       /* Fondo general */
+  line-height: 1.5;                /* Altura de línea */
+}
+
+
+
+/* 3. LAYOUT (ESTRUCTURA CLÁSICA)                         */
+
+
+/* Contenedor principal */
+.contenedor {
+  width: 400px;            /* Ancho fijo */
+  max-width: 90%;          /* Adaptación a pantallas pequeñas */
+  margin: 60px auto;       /* Centrado horizontal clásico */
+  padding: 20px;           /* Espacio interior */
+  background-color: #fff;  /* Fondo del contenedor */
+  border: 2px solid #ccc;  /* Borde */
+  border-radius: 15px;     /* Bordes redondeados */
+}
+
+/* Secciones */
+.section {
+  margin-bottom: 20px;     /* Separación entre bloques */
+}
+
+
+
+/* 4. POSICIONAMIENTO BÁSICO                              */
+
+
+/* Posicionamiento relativo */
+.relative {
+  position: relative;      /* Referencia para elementos hijos */
+}
+
+/* Posicionamiento absoluto */
+.absolute {
+  position: absolute;      /* Sale del flujo normal */
+  top: 0;
+  left: 0;
+}
+
+/* Posicionamiento fijo */
+.fixed {
+  position: fixed;         /* Fijo en pantalla */
+  bottom: 0;
+  right: 0;
+}
+
+
+
+/* 5. COMPONENTES                                        */
+
+
+/* Cabecera */
+.header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Caja genérica */
+.box {
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+}
+
+
+
+/* 6. TIPOGRAFÍA                                         */
+
+
+/* Títulos */
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+/* Texto */
+p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Título personalizado */
+.titulo {
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* 7. FORMULARIOS                                        */
+
+
+/* Formulario */
+form {
+  width: 100%;
+}
+
+/* Etiquetas */
+label {
+  display: block;          /* Una etiqueta por línea */
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Campos de entrada */
+input,
+select,
+textarea {
+  width: 100%;             /* Ancho completo */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Campo enfocado */
+input:focus {
+  outline: none;
+  border-color: #666;
+}
+
+
+
+/* 8. BOTONES                                            */
+
+
+/* Botón genérico */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hover del botón */
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* 9. FOOTER                                             */
+
+
+/* Pie de página */
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Texto del footer */
+.footer-text {
+  font-size: 12px;
+  color: #777;
+}
+
+
+
+/* 10. UTILIDADES                                        */
+
+
+/* Centrado de texto */
+.text-center {
+  text-align: center;
+}
+
+/* Márgenes reutilizables */
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+/* Ocultar elementos */
+.hidden {
+  display: none;
+}
