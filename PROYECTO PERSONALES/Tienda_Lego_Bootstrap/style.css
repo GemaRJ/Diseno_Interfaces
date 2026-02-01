@@ -1,0 +1,51 @@
+/* ==========================
+   FONDOS POR PÁGINA
+========================== */
+body#pagina-inicio {
+    background: url('./imagenes/fondo_blanco.avif') center/cover no-repeat;
+    min-height: 100vh;
+}
+
+body#pagina-producto {
+    background: url('./imagenes/fondo_blanco.avif') center/cover no-repeat;
+    min-height: 100vh;
+}
+
+body#pagina-contacto {
+    background: url('./imagenes/lego4.jpg') center/cover no-repeat;
+    min-height: 100vh;
+}
+
+/* ==========================
+   AJUSTES GENERALES DE PADDING
+========================== */
+main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+footer {
+    margin-top: 30px;
+}
+
+/* ==========================
+   REDONDEO OPCIONAL PARA IMÁGENES
+========================== */
+.card-img-top, img.img-fluid {
+    border-radius: 8px; /* suaviza bordes de las imágenes */
+}
+
+/* ==========================
+   AJUSTES DE FORMULARIO (si quieres un poco más de estilo)
+========================== */
+form .form-check-label a {
+    text-decoration: underline;
+    color: #d50000;
+}
+
+form .form-check-label a:hover {
+    color: #a00000;
+}

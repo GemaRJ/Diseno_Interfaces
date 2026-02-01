@@ -1,0 +1,26 @@
+html, body {
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Fondos */
+#pagina-inicio {
+  background: url('./imagenes/portada.jpg') center/cover no-repeat;
+}
+
+#pagina-producto {
+  background: url('./imagenes/paisaje1.jpeg') center/cover no-repeat;
+}
+
+#pagina-contacto {
+  background: url('./imagenes/cliper2.webp') center/cover no-repeat;
+}
+
+/* Overlay */
+.overlay {
+  background: rgba(230, 230, 230, 0.95);
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1200px;
+}

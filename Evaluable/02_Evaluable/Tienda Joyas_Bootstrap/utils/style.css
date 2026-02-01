@@ -1,0 +1,40 @@
+.text-palo {
+  color: #ee7676 !important; /* Rosa palo */
+}
+
+.title-palo {
+  color: #ee7676; /* Rosa palo */
+  font-weight: 600;
+}
+
+.btn-palo {
+  background-color: #ee7676; /* Rosa palo */
+  color: white;
+  border: none;
+}
+
+.btn-palo:hover {
+  background-color: #d85b5b; /* Rosa palo oscuro */
+  color: #fff;
+}
+
+.btn-outline-palo {
+  border: 1px solid #ee7676; /* Rosa palo */
+  color: #ee7676;
+}
+
+.price {
+  color: #ee7676; /* Rosa palo para precios */
+  font-weight: 600;
+}
+
+.cta-footer {
+  background: linear-gradient(135deg, #ee7676, #d85b5b); /* Degradado rosa */
+}
+
+.card-img-top,
+.producto-destacado {
+  width: 100%;
+  height: 300px; /* Ajusta la altura que quieras */
+  object-fit: cover; /* Mantiene el encuadre y recorta lo que sobra */
+}

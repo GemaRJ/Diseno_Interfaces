@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Producto | Gema Atelier · Joyería Artesanal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./utils/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+      <div class="container">
+        <a class="navbar-brand text-palo fw-bold" href="index.html">
+          Gema Atelier · Joyería Artesanal
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CARRUSEL DE PRODUCTOS -->
+    <section class="container py-5">
+      <h3 class="title-palo text-center mb-4">Nuestros Productos Destacados</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div
+            id="productoCarousel"
+            class="carousel slide shadow rounded"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active text-center">
+                <img
+                  src="./utils/imagenes/3.png"
+                  class="d-block w-100 producto-destacado"
+                  alt="Anillo de Compromiso Solitario"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                >
+                  <h5>Anillo de Compromiso Solitario</h5>
+                  <p>3.200€</p>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <img
+                  src="./utils/imagenes/2.png"
+                  class="d-block w-100 producto-destacado"
+                  alt="Anillo Compromiso"
+                />
+
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                >
+                  <h5>Anillo de Diamantes</h5>
+                  <p>2.450€</p>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <img
+                  src="./utils/imagenes/7.png"
+                  class="d-block w-100 producto-destacado"
+                  alt="Pulsera de Plata Artesanal"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                >
+                  <h5>Pulsera de Plata Artesanal</h5>
+                  <p>189€</p>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <img
+                  src="./utils/imagenes/8.png"
+                  class="d-block w-100 producto-destacado"
+                  alt="Pendientes de Plata"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                >
+                  <h5>Pendientes de Plata</h5>
+                  <p>275€</p>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <img
+                  src="./utils/imagenes/4.png"
+                  class="d-block w-100 producto-destacado"
+                  alt="Pendientes de Esmeralda"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                >
+                  <h5>Anillo de Esmeralda</h5>
+                  <p>1.850€</p>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <img
+                  src="./utils/imagenes/6.png"
+                  class="d-block w-100 producto-destacado"
+                  alt="Anillo de Esmeralda"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2"
+                >
+                  <h5>Anillo de Diamantes</h5>
+                  <p>1.200€</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#productoCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#productoCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS PARA COMPRAR (1 FILA + VER MÁS) -->
+    <section class="container py-5">
+      <h3 class="title-palo text-center mb-4">Catálogo</h3>
+
+      <!-- FILA VISIBLE -->
+      <div class="row g-4 mb-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <img
+              src="./utils/imagenes/2.png"
+              class="card-img-top"
+              alt="Anillo de Diamante"
+            />
+            <div class="card-body text-start">
+              <h6>Anillo de Diamante</h6>
+              <p class="price">2.450€</p>
+              <button class="btn btn-palo w-100">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <img
+              src="./utils/imagenes/3.png"
+              class="card-img-top"
+              alt="Anillo de Compromiso Solitario"
+            />
+            <div class="card-body text-start">
+              <h6>Anillo de Compromiso Solitario</h6>
+              <p class="price">3.200€</p>
+              <button class="btn btn-palo w-100">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <img
+              src="./utils/imagenes/4.png"
+              class="card-img-top"
+              alt="Pendientes de Esmeralda"
+            />
+            <div class="card-body text-start">
+              <h6>Pendientes de Esmeralda</h6>
+              <p class="price">1.850€</p>
+              <button class="btn btn-palo w-100">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILA OCULTA, se muestra al pulsar "Ver más" -->
+      <div class="collapse" id="moreProducts">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <img
+                src="./utils/imagenes/7.png"
+                class="card-img-top"
+                alt="Pulsera de Plata Artesanal"
+              />
+              <div class="card-body text-start">
+                <h6>Pulsera de Plata Artesanal</h6>
+                <p class="price">189€</p>
+                <button class="btn btn-palo w-100">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <img
+                src="./utils/imagenes/6.png"
+                class="card-img-top"
+                alt="Anillo de Diamantes"
+              />
+              <div class="card-body text-start">
+                <h6>Anillo de Diamantes</h6>
+                <p class="price">1200€</p>
+                <button class="btn btn-palo w-100">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <img
+                src="./utils/imagenes/8.png"
+                class="card-img-top"
+                alt="Pendientes de Plata"
+              />
+              <div class="card-body text-start">
+                <h6>Pendientes de Plata</h6>
+                <p class="price">275€</p>
+                <button class="btn btn-palo w-100">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTÓN VER MÁS -->
+      <div class="text-center mt-4">
+        <button
+          class="btn btn-outline-palo px-4"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#moreProducts"
+          aria-expanded="false"
+          aria-controls="moreProducts"
+        >
+          Ver más productos
+        </button>
+      </div>
+    </section>
+
+    <!-- CTA FOOTER -->
+    <footer class="cta-footer text-center py-5 mt-5">
+      <div class="container">
+        <h2 class="fw-bold mb-3 text-white">
+          ¿Listo para Encontrar tu Joya Perfecta?
+        </h2>
+        <p class="text-light mb-4">
+          Visita nuestra tienda o contáctanos para una consulta personalizada.
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="contacto.html" class="btn btn-outline-light px-4"
+            >Contactar
+          </a>
+        </div>
+      </div>
+    </footer>
+    <p class="text-center text-muted mt-4">
+      © 2026 Gema Atelier · Joyería Artesanal
+    </p>
+  </body>
+</html>
