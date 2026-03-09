@@ -21,6 +21,12 @@ Accede a todo el temario teórico de diseño de interfaces y maquetación:
 
 > Cada tema contiene sus archivos HTML y se pueden abrir directamente en el navegador.
 
+> ## 📸 Galería del Proyecto
+
+**[Ver capturas del diseño responsivo](https://github.com/GemaRJ/Diseno_Interfaces/tree/main/PROYECTO%20PERSONALES/Tienda_Joyas_Bootstrap/Im%C3%A1genes%20Demo%20Joyas)**
+
+---
+
 ---
 
 ## 📝 Prácticas / Ejercicios diarios
